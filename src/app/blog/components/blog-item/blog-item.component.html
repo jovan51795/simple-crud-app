@@ -1,0 +1,32 @@
+<div>
+    <mat-card-header class="title-wrapper">
+        <div mat-card-title class="title">{{blogItem?.title}}</div>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-title-group >
+        <mat-card-subtitle>ID</mat-card-subtitle>
+        <p>{{ blogItem?.id }}</p>
+    </mat-card-title-group>
+    <mat-card-title-group >
+        <mat-card-subtitle>TITLE</mat-card-subtitle>
+        <p>{{blogItem?.title}}</p>
+    </mat-card-title-group>
+    <mat-card-title-group >
+        <mat-card-subtitle>DESSCRIPTION</mat-card-subtitle>
+        <p>{{blogItem?.description}}</p>
+    </mat-card-title-group>
+    <mat-card-title-group >
+        <mat-card-subtitle>AUTHOR</mat-card-subtitle>
+        <p>{{blogItem?.author}}</p>
+    </mat-card-title-group>
+
+    <mat-card-title-group >
+        <mat-card-subtitle>COMMENTS</mat-card-subtitle>
+        <div class="author-container"> <p *ngFor="let comment of blogItem?.comments" >{{comment }}</p></div>
+    </mat-card-title-group>
+    
+</div>
+<div class="card-footer">
+    <button mat-raised-button color="primary" [routerLink]="['form', blogItem?.id]">EDIT</button>
+    <button mat-raised-button color="warn" (click)="cardAction(blogItem?.id)">DELETE</button>
+</div>

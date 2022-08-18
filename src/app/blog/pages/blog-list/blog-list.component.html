@@ -1,0 +1,6 @@
+<app-command-bar (deleteAllEmitter)="deleteAllBlog()"></app-command-bar>
+<section>
+    <mat-card *ngFor="let blog of blogs" class="example-card">
+        <app-blog-item [blogItem]="blog" class="app-book" (actionEmetter)="action($event)"></app-blog-item>
+    </mat-card>
+</section>

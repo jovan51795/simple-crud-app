@@ -1,0 +1,28 @@
+<div>
+    <mat-card-header class="title-wrapper">
+        <div mat-card-title class="title">{{bookItem?.name}}</div>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-title-group >
+        <mat-card-subtitle>ID</mat-card-subtitle>
+        <p>{{ bookItem?.id }}</p>
+    </mat-card-title-group>
+    <mat-card-title-group >
+        <mat-card-subtitle>NAME</mat-card-subtitle>
+        <p>{{bookItem?.name}}</p>
+    </mat-card-title-group>
+    <mat-card-title-group >
+        
+        <mat-card-subtitle>AUTHORS</mat-card-subtitle>
+        <div class="author-container"> <p *ngFor="let author of bookItem?.authors" >{{author }}</p></div>
+    </mat-card-title-group>
+    <mat-card-title-group >
+        <mat-card-subtitle>ISBN</mat-card-subtitle>
+        <p>{{bookItem?.isbn}}</p>
+    </mat-card-title-group>
+    
+</div>
+<div class="card-footer">
+    <button mat-raised-button color="primary" [routerLink]="['form', bookItem?.id]">EDIT</button>
+    <button mat-raised-button color="warn" (click)="cardAction( bookItem?.id)">DELETE</button>
+</div>

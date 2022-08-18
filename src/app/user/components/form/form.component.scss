@@ -1,0 +1,25 @@
+// .example-container .mat-form-field + .mat-form-field {
+//     margin-left: 8px;
+//   }
+section {
+    form {
+        width: 50%;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+        input {
+            flex: 2;
+            height: 2.5rem;
+        }
+        label {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            font-weight: 800;
+        }
+    
+    }
+}

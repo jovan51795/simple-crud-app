@@ -1,0 +1,41 @@
+{
+  "blog": [],
+  "books": [
+    {
+      "id": 1,
+      "name": "dfgdfsg",
+      "authors": [
+        "fdgdsfg"
+      ],
+      "isbn": "gdfsgdsf"
+    },
+    {
+      "id": 2,
+      "name": "dfgdfsg",
+      "authors": [
+        "fdgdsfg"
+      ],
+      "isbn": "gdfsgdsf"
+    }
+  ],
+  "users": [
+    {
+      "email": "jovanie@gmail.com",
+      "password": "$2a$10$7mQUyIfSBJ9QF8sCZ6wcpO8a/YGelM13QiYHOXxSZLuPGnEqWOdWu",
+      "name": "jovanie",
+      "id": 1
+    },
+    {
+      "email": "jovanie1234@gmail.com",
+      "password": "$2a$10$4xGzgV0rr6/UZhe8.bHDneJsHRkcnjsBWnMf1sSBuY8dwZgoiK57C",
+      "name": "jovanie",
+      "id": 2
+    },
+    {
+      "email": "jovan@gmail.com",
+      "password": "$2a$10$bmpBZVskG.tBSHAezPtXPuyjsLYPq6sOatYhxihY.ngydnUwEk9QK",
+      "name": "jovan",
+      "id": 3
+    }
+  ]
+}
