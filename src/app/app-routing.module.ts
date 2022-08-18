@@ -42,14 +42,14 @@ const routes: Routes = [
       },
     ]
   },
-  {
-    path: "404",
-    component: NotfoundComponent
-  },
-  {
-    path: "**",
-    redirectTo: "404"
-  }
+  // {
+  //   path: "404",
+  //   component: NotfoundComponent
+  // },
+  // {
+  //   path: "**",
+  //   redirectTo: "404"
+  // }
   // {
   //   path: "book",
   //   loadChildren: () => import('./book/book.module').then( b => b.BookModule)
