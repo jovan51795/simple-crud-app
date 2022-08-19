@@ -1,6 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from 'src/app/core/services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +9,7 @@ import { AuthService } from 'src/app/core/services/auth.service';
 export class HeaderComponent implements OnInit, AfterViewInit {
 
   header = false
-  constructor(private autheService: AuthService, private router: Router) { }
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
   }

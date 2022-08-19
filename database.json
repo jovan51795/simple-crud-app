@@ -1,16 +1,19 @@
 {
-  "blog": [],
+  "blog": [
+    {
+      "id": 1,
+      "title": "dffgsdf",
+      "description": "gdsfgsd",
+      "author": "dsgsd",
+      "comments": [
+        "gsdfds",
+        "gsdfgsd"
+      ]
+    }
+  ],
   "books": [
     {
       "id": 1,
-      "name": "dfgdfsg",
-      "authors": [
-        "fdgdsfg"
-      ],
-      "isbn": "gdfsgdsf"
-    },
-    {
-      "id": 2,
       "name": "dfgdfsg",
       "authors": [
         "fdgdsfg"

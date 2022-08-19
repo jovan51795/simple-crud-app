@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Blog } from '../../models/blog';
@@ -23,13 +23,6 @@ export class BlogFormComponent implements OnInit, OnDestroy {
     
 
     this.blogFormGroup = this.fb.group({
-      // id: [{value: this.blogItems[0].id, disabled: this.paramId === 'false'? false : true}],
-      // title: [this.blogItems[0].title],
-      // description: [this.blogItems[0].description],
-      // author: [this.blogItems[0].author],
-      // comments: this.fb.array([])
-
-
       id: [],
       title: [''],
       description: [''],
