@@ -42,28 +42,14 @@ const routes: Routes = [
       },
     ]
   },
-  // {
-  //   path: "404",
-  //   component: NotfoundComponent
-  // },
-  // {
-  //   path: "**",
-  //   redirectTo: "404"
-  // }
-  // {
-  //   path: "book",
-  //   loadChildren: () => import('./book/book.module').then( b => b.BookModule)
-  // },
-  // {
-  //   path: 'blog',
-  //   loadChildren: () => import('./blog/blog.module').then( m => m.BlogModule)
-  // },
-  // {
-  //   path: 'profile',
-  //   loadChildren: () => import('./user/user.module').then(u => u.UserModule),
-  //   canActivate: [AuthGuard],
-    
-  // },
+  {
+    path: "404",
+    component: NotfoundComponent
+  },
+  {
+    path: "**",
+    redirectTo: "404"
+  }
 ];
 
 @NgModule({
