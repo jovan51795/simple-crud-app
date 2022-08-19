@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: "https://jovanie-fake-server-auth-app.herokuapp.com"
+  url: "http://localhost:3000" //https://jovanie-fake-server-auth-app.herokuapp.com
 };
 
 /*
