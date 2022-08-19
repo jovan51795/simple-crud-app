@@ -35,7 +35,7 @@ export class BlogServiceService {
   ]
 
   getBlog(): Observable<Blog[]> {
-    return this.http.get<Blog[]>(`${environment.url}/blog`).pipe(
+    return this.http.get<Blog[]>(`${environment.url}/blogs`).pipe(
       tap((b: Blog[]) => {
         return b
       })
@@ -43,12 +43,12 @@ export class BlogServiceService {
   }
 
   setBlog = (b: Blog) => {
-    return this.http.post(`${environment.url}/blog`, b).pipe(
+    return this.http.post(`${environment.url}/blogs`, b).pipe(
       tap( b => b)
     )
   }
   editBlog = (blogData: Blog) => {
-    return this.http.put(`${environment.url}/blog/${blogData.id}`, blogData).pipe(
+    return this.http.put(`${environment.url}/blogs/${blogData.id}`, blogData).pipe(
       tap(x => x)
     )
   }
@@ -62,38 +62,11 @@ export class BlogServiceService {
   }
 
   delete =(id: number) => {
-    return this.http.delete(`${environment.url}/blog/${id}`).pipe(
+    return this.http.delete(`${environment.url}/blogs/${id}`).pipe(
       tap(x => x)
     )
   }
 
-
-  // getBlog = () => {
-  //   return this.blog;
-  // }
-
-  // setBook = (bookData: Blog) => {
-  //   this.blog.push(bookData)
-  // }
-
-  // editBlog = (blogData: Blog) => {
-  //  for(let x of this.blog) {
-  //   if(x.id === blogData.id){
-  //     x.title = blogData.title
-  //     x.author = blogData.author
-  //     x.description = blogData.description
-  //     x.comments = blogData.comments
-  //   }
-  //  }
-
-  //  console.log(this.blog)
-   
-   
-  // }
-
-  // delete(id: number){
-  //   this.blog = this.blog.filter((x)=> x.id !== id)
-  // }
   deleteAll = () => {
     this.blog = [];
     console.log(this.blog)
